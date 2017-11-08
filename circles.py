@@ -16,3 +16,4 @@ for i in range(0, 90):
 #        t.color("red")
     t.circle(i + 1)
     t.right(122)
+input('Press ENTER to continue')
