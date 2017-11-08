@@ -53,6 +53,9 @@ class Lizard(Animal):
 
     def get_species(self):
         return self.__species
+    
+    def say(self):
+        print('Fifteen minutes could save you fifteen percent or more on car insurance.')
 
 
 dog = Dog(2, name='Bob', breed='beagle')
