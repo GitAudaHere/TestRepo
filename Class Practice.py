@@ -19,7 +19,7 @@ class Dog(Animal):
         self.__breed = breed
 
     def __str__(self):
-        return f'This dog is a {self.__breed} named {Animal.get_name(self)} and is {Animal.get_age(self)} years old'
+        return f'This dog is a {self.__breed} named {self.get_name()} and is {self.get_age()} years old'
 
     def get_breed(self):
         return self.__breed
@@ -34,7 +34,7 @@ class Cat(Animal):
         self.__breed = breed
 
     def __str__(self):
-        return f'This cat is a {self.__breed} named {Animal.get_name(self)} and is {Animal.get_age(self)} years old'
+        return f'This cat is a {self.__breed} named {self.get_name()} and is {self.get_age()} years old'
 
     def get_breed(self):
         return self.__breed
@@ -42,14 +42,15 @@ class Cat(Animal):
     def say(self):
         print('Meow')
 
+
 class Lizard(Animal):
     def __init__(self, age, name='', species=''):
         super().__init__(age, name)
         self.__species = species
-    
+
     def __str__(self):
-        return f'This lizard is a {self.__species} named {Animal.get_name(self)} and is {Animal.get_age(self)} years old'
-    
+        return f'This lizard is a {self.__species} named {self.get_name()} and is {self.get_age()} years old'
+
     def get_species(self):
         return self.__species
 
